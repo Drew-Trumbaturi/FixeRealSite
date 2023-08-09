@@ -1,0 +1,121 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.card {
+  /* background: rgb(23, 102, 180);
+  background: radial-gradient(
+    circle,
+    rgba(10, 55, 127, 1) 30%,
+    rgba(23, 102, 180, 1) 86%
+  ); */
+
+  background: var(--white-smoke);
+
+  width: 265px !important;
+  height: 400px;
+  border-radius: 0.5rem;
+  margin: 1.2rem;
+  text-align: center;
+  color: black;
+
+  box-shadow: 5px 5px 10px 3px #0000003f;
+}
+
+.card > img {
+  margin-top: 5px;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: grid;
+
+  background: #cce6fc;
+
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    /* background: rgb(23, 102, 180);
+    background: radial-gradient(
+      circle,
+      rgba(10, 55, 127, 1) 30%,
+      rgba(23, 102, 180, 1) 86%
+    ); */
+
+    background: var(--white-smoke);
+
+    width: 90% !important;
+    height: 14rem;
+    border-radius: 0.5rem;
+    margin: 1.2rem;
+    text-align: center;
+    color: black;
+
+    align-content: center !important;
+
+    box-shadow: 5px 5px 10px 3px #0000003f;
+  }
+
+  .card > img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flip-card {
+    margin-bottom: 1rem;
+    background-color: transparent;
+    width: 90%;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+}

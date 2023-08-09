@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster&family=Rubik:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+:root {
+  --dark: #121212;
+  --c1: #1766b4ff;
+  --c2: #0a377fff;
+
+  --left-color: var(--c1);
+  --right-color: var(--c2);
+
+  --white-smoke: #f2f2f2ff;
+  --zomp: #629677ff;
+  --night: #121212ff;
+}
+
+body {
+  background-color: var(--white-smoke);
+  margin: 0 auto;
+  color: var(--dark);
+
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 10%;
+  padding-top: 10px;
+
+  background: var(--c1);
+  background: radial-gradient(circle, var(--c1) 50%, var(--c2) 86%);
+
+  align-content: center;
+  justify-content: center;
+
+  z-index: 3;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+}
+
+small {
+  font-size: x-small;
+}
+
+.my-container {
+  margin: 0 auto;
+  width: 80% !important;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapper {
+  margin-top: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.my-footer {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fancy {
+  font-family: "Lobster", cursive;
+  font-size: 1em;
+  line-height: 0.6em;
+}
+
+.pou-bg {
+  background-image: url("Images/blue-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#footer-links > a {
+  text-decoration: none;
+  font-size: 10px;
+  padding: 3px;
+  color: #121212;
+}
+
+#shielded-logo > img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-footer {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 90xp 90px 90px;
+  }
+}
