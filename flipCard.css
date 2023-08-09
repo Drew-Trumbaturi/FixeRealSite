@@ -14,7 +14,7 @@
     rgba(23, 102, 180, 1) 86%
   ); */
 
-  background: var(--white-smoke);
+  background: var(--white-smoke) !important;
 
   width: 265px !important;
   height: 400px;
@@ -89,7 +89,7 @@
       rgba(23, 102, 180, 1) 86%
     ); */
 
-    background: var(--white-smoke);
+    background: #ffe494;
 
     width: 90% !important;
     height: 14rem;
