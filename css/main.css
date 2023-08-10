@@ -13,6 +13,8 @@
   --white-smoke: #f2f2f2ff;
   --zomp: #629677ff;
   --night: #121212ff;
+
+  --light-bg: #ecf7fd;
 }
 
 body {
@@ -100,9 +102,7 @@ small {
 }
 
 .pou-bg {
-  background-image: url("Images/blue-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--light-bg);
 }
 
 #footer-links {

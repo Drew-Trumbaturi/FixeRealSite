@@ -9,15 +9,19 @@
     <title>Fixe Solutions Ltd.</title>
     <link
       rel="stylesheet"
-      href="main.css"
+      href="css/main.css"
     />
     <link
       rel="stylesheet"
-      href="flipCard.css"
+      href="css/flipCard.css"
     />
     <link
       rel="stylesheet"
-      href="swipeHeader.css"
+      href="css/swipeHeader.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/paralax.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -258,9 +262,9 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img
-                    src=""
+                    src="Images/project-management.png"
                     alt="Avatar"
-                    style="width: 300px; height: 400px"
+                    style="width: 120px; height: 120px"
                   />
                 </div>
                 <div class="flip-card-back">
@@ -275,9 +279,9 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img
-                    src="img_avatar.png"
+                    src="Images/data-processing.png"
                     alt="Avatar"
-                    style="width: 300px; height: 300px"
+                    style="width: 120px; height: 120px"
                   />
                 </div>
                 <div class="flip-card-back">
@@ -292,9 +296,9 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <img
-                    src="img_avatar.png"
+                    src="Images/content-management-system.png"
                     alt="Avatar"
-                    style="width: 300px; height: 300px"
+                    style="width: 120px; height: 120px"
                   />
                 </div>
                 <div class="flip-card-back">
@@ -309,7 +313,41 @@
       </div>
     </div>
 
-    <div id="paralax"></div>
+    <div
+      id="parallax-container"
+      style="height: 500px"
+    >
+      <section>
+        <div class="parallax-bg-one"></div>
+        <h2>Located in beatiful Rotorua</h2>
+      </section>
+    </div>
+
+    <div class="content">
+      <h2>Other Content with a black and white divider</h2>
+      <p>
+        This is some other content where there will be a black and white
+        transition like we've seen on Xode.nz.
+      </p>
+    </div>
+
+    <div
+      id="parallax-container"
+      style="height: 500px"
+    >
+      <section>
+        <div class="parallax-bg-two"></div>
+        <h2>Located in beatiful Rotorua</h2>
+      </section>
+    </div>
+
+    <div class="content">
+      <h2>Other Content with a black and white divider</h2>
+      <p>
+        This is some other content where there will be a black and white
+        transition like we've seen on Xode.nz.
+      </p>
+    </div>
 
     <footer
       class="d-flex flex flex-wrap justify-content-between align-items-center container py-3 my-4 border-top"
@@ -330,6 +368,7 @@
           <a href="#">FAQ</a>
           <a href="#">T&Cs</a>
           <a href="#">Careers</a>
+          <a href="#">Login</a>
           <a
             href="#"
             id="shielded-logo"

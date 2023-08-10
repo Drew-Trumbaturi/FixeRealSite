@@ -1,0 +1,79 @@
+#parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  perspective: 10px;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  z-index: 2;
+}
+
+.content {
+  padding: 50px;
+  height: 500px;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+#parallax-container h2 {
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+#parallax-container .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#parallax-container .parallax-bg-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://www.rotoruanz.com/getattachment/8e3f7feb-ac01-4645-9080-58b3000961d2/rotorua-lakefront_1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transform: translateZ(-10) scale(2);
+}
+
+#parallax-container .parallax-bg-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://www.skyline.co.nz/media/2979/skyline-rotorua_gondola_gondola-cabin.jpg?anchor=center&mode=crop&width=1920&height=960&rnd=132155441870000000);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transform: translateZ(-10) scale(2);
+}
